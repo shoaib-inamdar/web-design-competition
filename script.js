@@ -34,6 +34,9 @@ tl.to(".imgdiv",{
     width:"100%",
     height:"100%",
 },'a')
+// tl.to(".imgdiv",{
+//     scale:.8
+// })
 // tl.to(".")
 
 gsap.to(".page2-wrapper",{
@@ -97,16 +100,30 @@ function animateTextContentByAttribute(attributeName) {
 animateTextContentByAttribute('data-page');
 
 
+function cursor(){
+    window.addEventListener("mousemove",function(e){
+        gsap.to(".innercursor,.cursor",{
+            x:e.clientX,
+            y:e.clientY,
+            opacity:1,
+            // ease:"expo.inOut",
+            stagger:.04,
+            // duration:.2
+        })
+    })
+}
+cursor()
+
 document.querySelectorAll(".cursoreffect").forEach(function(e){
     e.addEventListener("mouseenter",function(elem){
-        gsap.to(".innercursor",{
+        gsap.to(".cursor",{
             scale:7
         })
     })
 })
 document.querySelectorAll(".cursoreffect").forEach(function(e){
     e.addEventListener("mouseleave",function(elem){
-        gsap.to(".innercursor",{
+        gsap.to(".cursor",{
             scale:1
         })
     })
