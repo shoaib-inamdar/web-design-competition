@@ -1,65 +1,102 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="main w-full h-screen bg-black ">
-      <div class="page1 w-full h-screen relative ">
-        <div class="content relative w-full h-full flex justify-center items-center">
-          <div class="imgdiv w-[20rem] h-[30rem] bg-white rotate-12">
-            <img class="w-full h-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV6Sy_nIAFmwASStF1s5w_faIZ4-U_5VcXW4jnJBv8j5M0S3BgaZG36pZdGVsicEEadw&usqp=CAU" alt="">
-          </div>
-          <h1 class="text-8xl absolute text-white mix-blend-difference">FASHION & STYLE</h1>
-        </div>
-      </div>
-      <div class="page2 w-full h-screen ">
-        <div class="page2-wrapper flex w-full h-full">
-        <div class="cardiv relative w-full h-screen flex-shrink-0 bg-red-500">
-          <div class="card-heading sticky left-0 w-fit z-[2] h-full bg-yellow-500"><h1 class="text-5xl h-full text-center">card 1</h1></div>
-          <div class="cards w-[50%] h-[50%] grid grid-cols-2 gap-10 bg-blue-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-          </div>
-        </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0 bg-red-500">
-          <div class="card-heading sticky left-0 w-fit z-[2] h-full bg-yellow-500"><h1 class="text-5xl h-full text-center">card 2</h1></div>
-          <div class="cards w-[50%] h-[50%] grid grid-cols-2 gap-10 bg-blue-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-          </div>
-        </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0 bg-red-500">
-          <div class="card-heading sticky left-0 w-fit z-[2] h-full bg-yellow-500"><h1 class="text-5xl h-full text-center">card 3</h1></div>
-          <div class="cards w-[50%] h-[50%] grid grid-cols-2 gap-10 bg-blue-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-          </div>
-        </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0 bg-red-500">
-          <div class="card-heading sticky left-0 w-fit z-[2] h-full bg-yellow-500"><h1 class="text-5xl h-full text-center">card 4</h1></div>
-          <div class="cards w-[50%] h-[50%] grid grid-cols-2 gap-10 bg-blue-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-            <div class="card w-48 h-48 bg-green-600"></div>
-          </div>
-        </div>
 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main w-full bg-black overflow-x-hidden ">
+    <div class="page1 w-full h-screen relative ">
+      <div class="nav w-full z-[2] flex justify-between px-10 pt-5 absolute top-0 left-0">
+        <h1 class="text-1xl uppercase text-white mix-blend-difference">home</h1>
+        <h1 class="text-1xl uppercase text-white mix-blend-difference">about</h1>
+        <h1 class="text-1xl uppercase text-white mix-blend-difference">content</h1>
+        <h1 class="text-1xl uppercase text-white mix-blend-difference">more</h1>
+      </div>
+      <div class="content relative w-full h-full flex justify-center items-center">
+        <div class="imgdiv w-[20rem] h-[30rem] bg-white rotate-12">
+          <img class="w-full h-full object-cover"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV6Sy_nIAFmwASStF1s5w_faIZ4-U_5VcXW4jnJBv8j5M0S3BgaZG36pZdGVsicEEadw&usqp=CAU"
+            alt="">
+        </div>
+        <div class="centertext absolute flex-col">
+          <h1 class="text-2xl mix-blend-difference text-white">style icon</h1>
+          <h1 class="text-8xl  text-white mix-blend-difference">FASHION & STYLE</h1>
+          <h1 class="text-2xl  text-right  mix-blend-difference text-white">chico lachowski</h1>
         </div>
       </div>
     </div>
-    <!-- <script src="script.js"></script> -->
-    <script type="module" src="script.js"></script>
-  </body>
+    <div class="page2 w-full h-screen ">
+      <div class="page2-wrapper relative flex w-full h-full">
+        <div  class="page-heading w-full h-screen flex flex-shrink-0 justify-center items-center">
+          <div data-page=".page2" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">OUR PRODUCTS</h1></div>
+          <!-- <div class="underline w-full h-[3px] bg-white"></div> -->
+        </div>
+        <div class="cardiv relative w-full h-screen flex-shrink-0">
+          <div class="card-heading w-fit bg-zinc-800 p-10">
+            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
+          </div>
+          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="cardiv relative w-full h-screen flex-shrink-0">
+          <div class="card-heading w-fit bg-zinc-800 p-10">
+            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
+          </div>
+          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="cardiv relative w-full h-screen flex-shrink-0">
+          <div class="card-heading w-fit bg-zinc-800 p-10">
+            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
+          </div>
+          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="cardiv relative w-full h-screen flex-shrink-0">
+          <div class="card-heading w-fit bg-zinc-800 p-10">
+            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
+          </div>
+          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
+            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="page3 w-full h-screen">
+      <div  class="page-heading w-full h-screen flex flex-shrink-0 justify-center items-center">
+        <div data-page=".page3" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">ABOUT US</h1></div>
+        <!-- <div class="underline w-full h-[3px] bg-white"></div> -->
+      </div>
+      <!-- <div class="videodiv w-full h-full">
+        <video class="w-full h-full object-cover" id="scrollVideo" src="video.mp4"></video>
+      </div> -->
+    </div>
+    <div class="page4 w-full h-screen"></div>
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>
