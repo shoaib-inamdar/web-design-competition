@@ -35,12 +35,12 @@ tl.to(".imgdiv",{
     height:"100%",
 },'a')
 // tl.to(".imgdiv",{
-//     scale:.8
+//     scale:.8,
 // })
 // tl.to(".")
 
 gsap.to(".page2-wrapper",{
-    xPercent:"-410",
+    xPercent:"-210",
     
     scrollTrigger:{
         trigger:".page2",
@@ -87,8 +87,8 @@ function animateTextContentByAttribute(attributeName) {
             scrollTrigger: {
                 trigger: pageSelector,
                 scroller: 'body',
-                start: 'top 5%',
-                end: 'top 10%',
+                start: 'top 50%',
+                end: 'top 60%',
                 scrub: 2,
                 // markers: true // Set to false in production
             }
@@ -102,7 +102,7 @@ animateTextContentByAttribute('data-page');
 
 function cursor(){
     window.addEventListener("mousemove",function(e){
-        gsap.to(".innercursor,.cursor",{
+        gsap.to(".cursor",{
             x:e.clientX,
             y:e.clientY,
             opacity:1,
@@ -114,8 +114,19 @@ function cursor(){
 }
 cursor()
 
+var cursors=document.querySelector(".cursor")
 document.querySelectorAll(".cursoreffect").forEach(function(e){
     e.addEventListener("mouseenter",function(elem){
+        const data=`${e.getAttribute("data-text")}`
+        if(data=="null"){
+            cursors.innerHTML=""
+        }
+        else{
+            cursors.innerHTML=data
+        }
+        // data.value===null?cursors.innerHTML="":cursors.innerHTML=data
+        // cursors.innerHTML=data
+        // console.log(e.getAttribute("data-text"))
         gsap.to(".cursor",{
             scale:7
         })
@@ -123,8 +134,80 @@ document.querySelectorAll(".cursoreffect").forEach(function(e){
 })
 document.querySelectorAll(".cursoreffect").forEach(function(e){
     e.addEventListener("mouseleave",function(elem){
+        cursors.innerHTML=""
         gsap.to(".cursor",{
             scale:1
         })
+    })
+})
+
+var clutter=""
+document.querySelector(".para-effect")
+.textContent.split("")
+.forEach(function(e){
+    if(e==="") clutter+=`<span>$nbsp;</span>`
+    clutter+=`<span>${e}</span>`;
+})
+document.querySelector(".para-effect").innerHTML=clutter;
+var tl3=gsap.timeline({
+    scrollTrigger:{
+        trigger:".page3",
+        scrub:2,
+        start:"top 90%",
+        end:"60% bottom",
+        // pin:true,
+        // markers:true
+    }
+});
+gsap.set(".para-effect span",{
+    opacity:.2
+})
+tl3.to(".para-effect span",{
+    opacity:1,
+    stagger:.03,
+    ease:"power4",
+},'para')
+tl3.from(".imgdiv",{
+    height:0,
+    // width:0,
+    stagger:1,
+    duration:2
+    
+},'para')
+
+gsap.from(".videodiv",{
+    scale:.7,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".videodiv",
+        start:"top 80%",
+        end:"50% 70%",
+        // pin:true,
+        // markers:true
+        scrub:1,
+    }
+})
+
+document.querySelector(".menu").addEventListener("click",function(){
+    var navtl=gsap.timeline()
+    gsap.to(".nav",{
+        right:0,
+        duration:1,
+        ease:"power4",
+    })
+    navtl.from(".nav h1",{
+        x:100,
+        opacity:0,
+        duration:1,
+        ease:"power4",
+        stagger:.3,
+    })
+})
+
+document.querySelector(".cross").addEventListener("click",function(){
+    gsap.to(".nav",{
+        right:"-40%",
+        duration:1,
+        ease:"power4",  
     })
 })

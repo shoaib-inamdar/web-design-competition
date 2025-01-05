@@ -11,13 +11,19 @@
 
 <body>
   <div class="main w-full bg-black overflow-x-hidden ">
-    <div class="cursor w-4 h-4 pointer-events-none fixed z-[6] rounded-full bg-white -translate-x-1/2 -translate-y-1/2 opacity-0 mix-blend-difference "></div>
+    <div class="cursor w-4 h-4 pointer-events-none fixed z-[6] rounded-full bg-white -translate-x-1/2 -translate-y-1/2 opacity-0 mix-blend-difference text-[.2rem]  flex justify-center items-center"></div>
     <div class="page1 w-full h-screen relative ">
-      <div class="nav w-full z-[2] flex justify-between px-10 pt-5 absolute top-0 left-0 mix-blend-difference">
-        <h1 class="text-1xl uppercase text-white mix-blend-difference">home</h1>
-        <h1 class="text-1xl uppercase text-white mix-blend-difference">about</h1>
-        <h1 class="text-1xl uppercase text-white mix-blend-difference">content</h1>
-        <h1 class="text-1xl uppercase text-white mix-blend-difference">more</h1>
+      <div class="nav-over p-5 absolute top-0 left-0 z-[2] w-full flex justify-between items-center">
+        <div class="logo text-3xl text-white cursor-pointer cursoreffect">logo</div>
+        
+        <div class="menu text-3xl text-white cursor-pointer cursoreffect">menu</div>
+      </div>
+      <div class="nav absolute top-0 -right-[40%] w-1/3 h-full flex-col flex gap-10  z-[3] pt-10 px-10 mix-blend-difference">
+        <div class="cross text-5xl text-white cursor-pointer cursoreffect">❌</div>
+        <h1 class="text-5xl uppercase text-white mix-blend-difference">home</h1>
+        <h1 class="text-5xl uppercase text-white mix-blend-difference">about</h1>
+        <h1 class="text-5xl uppercase text-white mix-blend-difference">content</h1>
+        <h1 class="text-5xl uppercase text-white mix-blend-difference">more</h1>
       </div>
       <div class="content relative w-full h-full flex justify-center items-center">
         <div class="imgdiv w-[20rem] h-[30rem] bg-white rotate-12">
@@ -30,6 +36,12 @@
           <h1 class="text-8xl  text-white mix-blend-difference font-semibold">FASHION & STYLE</h1>
           <h1 class="text-2xl  text-right  mix-blend-difference text-white">chico lachowski</h1>
         </div>
+      </div>
+    </div>
+    <div class="marquee w-full relative my-20">
+      <div class="marquee-elem whitespace-nowrap overflow-x-auto pointer-events-none ">
+        <h1 class="inline-block uppercase text-7xl ml-[16px] font-normal text-transparent stroke"><span class="font-normal italic ">Iconic</span> - Revolution - Confident -</h1>
+        <h1 class="inline-block uppercase text-7xl ml-[16px] font-normal text-transparent stroke"><span class="font-normal italic ">Iconic</span> - Revolution - Confident -</h1>
       </div>
     </div>
     <div class="page2 w-full h-screen ">
@@ -60,44 +72,114 @@
             <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
           </div>
         </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0">
-          <div class="card-heading w-fit bg-zinc-800 p-10">
-            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
-          </div>
-          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
-          </div>
-        </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0">
-          <div class="card-heading w-fit bg-zinc-800 p-10">
-            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
-          </div>
-          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
-          </div>
-        </div>
+        
       </div>
     </div>
-    <div class="page3 w-full h-screen">
-      <div  class="page-heading w-full h-screen flex flex-shrink-0 justify-center items-center">
-        <div data-page=".page3" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">ABOUT US</h1></div>
-        <!-- <div class="underline w-full h-[3px] bg-white"></div> -->
+    <div class="products-page w-full">
+      <div class="mens w-full p-10 flex flex-col gap-5 justify-between items-center">
+        <div  class="page-heading w-full flex justify-center items-center">
+          <div data-page=".mens" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">MEN'S FASHION</h1></div>
+        </div>
+        <div class="cards p-10 flex gap-5 justify-between items-center">
+          <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+           
+            <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+            <div class="cardimg lg:w-72 h-full relative">
+           
+              <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
+            </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+           
+            <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+            <div class="cardimg lg:w-72 h-full relative">
+             
+              <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
+            </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+            
+            <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+            <div class="cardimg lg:w-72 h-full relative">
+              
+              <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
+            </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+            
+            <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+            <div class="cardimg lg:w-72 h-full relative">
+            
+              <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
+            </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>
+          </div>
+        </div>
+        </div>
+        <div class="womens w-full p-10 flex flex-col gap-5 justify-between items-center">
+          <div  class="page-heading w-full flex flex-shrink-0 justify-center items-center">
+            <div data-page=".womens" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">WOMEN'S FASHION</h1></div>
+          </div>
+      <div class="cards p-10 flex gap-5 justify-between items-center">
+        <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+          
+          <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+          <div class="cardimg lg:w-72 h-full relative">
+            
+            <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
+          </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+        <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+          
+          <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+          <div class="cardimg lg:w-72 h-full relative">
+           
+            <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
+          </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+        <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+          
+          <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+          <div class="cardimg lg:w-72 h-full relative">
+          
+            <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
+          </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+        <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
+          
+          <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
+          <div class="cardimg lg:w-72 h-full relative">
+           
+            <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
+          </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>   
+       </div>
       </div>
-      <!-- <div class="videodiv w-full h-full">
-        <video class="w-full h-full object-cover" id="scrollVideo" src="video.mp4"></video>
-      </div> -->
+      
+    </div>
+    <div class="marquee w-full relative my-20">
+      <div class="marquee-elem whitespace-nowrap overflow-x-auto pointer-events-none ">
+        <h1 class="inline-block uppercase text-7xl ml-[16px] font-normal text-transparent stroke"><span class="font-normal italic ">Elevate</span> - Fearless - Authentic -</h1>
+        <h1 class="inline-block uppercase text-7xl ml-[16px] font-normal text-transparent stroke"><span class="font-normal italic ">Elevate</span> - Fearless - Authentic -</h1>
+      </div>
+    </div>
+    <div class="page3 w-full h-fit ">
+      <div  class="page-heading w-full flex flex-shrink-0 justify-center items-center">
+        <div data-page=".page3" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">ABOUT US</h1></div>
+      </div>
+     
+      <div class="aboutus flex-col lg:p-28 lg:h-[30vw] h-screen text-center">
+        <h1 class="text-white text-3xl para-effect">Welcome to Mogwarts, where fashion meets modern enchantment. Our brand redefines style with a blend of timeless elegance and contemporary trends. Each piece is thoughtfully designed to celebrate individuality and inspire confidence. Step into a world where magic and fashion collide, creating unique, captivating wardrobe essentials for trendsetters everywhere.</h1>
+      </div>
+      <div data-text="see more" class="videodiv w-full h-screen cursoreffect scale-[.9]">
+        <video autoplay muted loop class="w-full h-full object-cover" id="scrollVideo" src="shirt.mp4"></video>
+      </div>
     </div>
     <div class="page4 w-full h-screen">
       
     </div>
   </div>
-  <!-- <script src="script.js"></script> -->
+  
   <script type="module" src="script.js"></script>
 </body>
 

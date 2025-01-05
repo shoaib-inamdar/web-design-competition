@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav{
+  background: rgba(0,0,0,1);
+  backdrop-filter: blur(20px);
+}
 .card-heading h1{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
+.marquee-elem::-webkit-scrollbar {
+    display: none;
+  }
+  .marquee-elem h1{
+    -webkit-text-stroke: 1px #fff;
+    animation: marquee 20s linear infinite;
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
