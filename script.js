@@ -40,7 +40,7 @@ tl.to(".imgdiv",{
 // tl.to(".")
 
 gsap.to(".page2-wrapper",{
-    xPercent:"-210",
+    xPercent:"-200",
     
     scrollTrigger:{
         trigger:".page2",
@@ -49,6 +49,28 @@ gsap.to(".page2-wrapper",{
         start:"top top",
         end:"+200% top",
         pin:true,
+        // markers:true
+    }
+})
+gsap.to("#circle1",{
+    rotation:-90,
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        scrub:2,
+        start:"top top",
+        end:"80% bottom",
+        // markers:true
+    }
+})
+gsap.to("#circle2",{
+    rotation:-45,
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        scrub:2,
+        start:"10% top",
+        end:"80% bottom",
         // markers:true
     }
 })
@@ -81,7 +103,7 @@ function animateTextContentByAttribute(attributeName) {
     pages.forEach(page => {
         const pageSelector = `${page.getAttribute("data-page")}`;
         gsap.from(`${pageSelector} .text-content h1`, {
-            y: 120,
+            y: 160,
             // stagger: 0.2,
             duration: 1,
             scrollTrigger: {
@@ -160,7 +182,7 @@ var tl3=gsap.timeline({
     }
 });
 gsap.set(".para-effect span",{
-    opacity:.2
+    opacity:0
 })
 tl3.to(".para-effect span",{
     opacity:1,

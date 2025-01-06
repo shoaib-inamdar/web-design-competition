@@ -17,6 +17,10 @@
     -webkit-text-stroke: 1px #fff;
     animation: marquee 20s linear infinite;
 }
+.circle{
+  width: 50%;
+  height: 23%;
+}
 @keyframes marquee {
     0% {
       transform: translateX(0);

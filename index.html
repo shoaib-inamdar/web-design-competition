@@ -11,7 +11,7 @@
 
 <body>
   <div class="main w-full bg-black overflow-x-hidden ">
-    <div class="cursor w-4 h-4 pointer-events-none fixed z-[6] rounded-full bg-white -translate-x-1/2 -translate-y-1/2 opacity-0 mix-blend-difference text-[.2rem]  flex justify-center items-center"></div>
+    <div class="cursor w-4 h-4 pointer-events-none fixed z-[6] rounded-full bg-white -translate-x-1/2 -translate-y-1/2 opacity-0 mix-blend-difference text-[.2rem] font-semibold flex justify-center items-center"></div>
     <div class="page1 w-full h-screen relative ">
       <div class="nav-over p-5 absolute top-0 left-0 z-[2] w-full flex justify-between items-center">
         <div class="logo text-3xl text-white cursor-pointer cursoreffect">logo</div>
@@ -47,29 +47,30 @@
     <div class="page2 w-full h-screen ">
       <div class="page2-wrapper relative flex w-full h-full">
         <div  class="page-heading w-full h-screen flex flex-shrink-0 justify-center items-center">
-          <div data-page=".page2" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">OUR PRODUCTS</h1></div>
+          <div id="circle1" class="circle lg:ml-10 lg:mr-10 lg:mt-20 lg:w-[23vw] lg:h-[23vw] h-full w-full mx-5 border-[2px] border-white flex justify-center items-center rounded-full -rotate-180 mix-blend-difference">
+            <svg class="button__arrow text-white h-[30%]" viewBox="0 0 91 118" fill="none">
+              <path
+              d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+              fill="currentColor"></path>
+            </svg>
+          </div>
           <!-- <div class="underline w-full h-[3px] bg-white"></div> -->
         </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0">
-          <div class="card-heading w-fit bg-zinc-800 p-10">
-            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
-          </div>
-          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+        <div class="cardiv relative w-full h-screen flex justify-center items-center flex-shrink-0">
+          <div class="cards w-[40rem] h-[35rem] p-5 flex justify-center items-center gap-5 bg-blue-500 flex-wrap">
+            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
+            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
+            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
+            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
           </div>
         </div>
-        <div class="cardiv relative w-full h-screen flex-shrink-0">
-          <div class="card-heading w-fit bg-zinc-800 p-10">
-            <h1 class="text-5xl h-full text-center text-white">card 1</h1>
-          </div>
-          <div class="cards w-[80%] h-[70%] flex gap-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2023/09/14/15/48/woman-8253239_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2021/08/12/13/39/woman-6540891_1280.jpg" alt=""></div>
-            <div class="card w-60 h-full "><img class="w-full h-full" src="https://cdn.pixabay.com/photo/2022/12/17/12/03/fashion-7661610_1280.jpg" alt=""></div>
+        <div class="cardiv relative w-full h-screen flex justify-center items-center flex-shrink-0">
+          <div id="circle2" class="circle lg:ml-10 lg:mr-10 lg:mt-20 lg:w-[23vw] lg:h-[23vw] h-full w-full mx-5 border-[2px] border-white flex justify-center items-center rounded-full rotate-90 mix-blend-difference">
+            <svg class="button__arrow text-white h-[30%]" viewBox="0 0 91 118" fill="none">
+              <path
+              d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+              fill="currentColor"></path>
+            </svg>
           </div>
         </div>
         
@@ -80,7 +81,7 @@
         <div  class="page-heading w-full flex justify-center items-center">
           <div data-page=".mens" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">MEN'S FASHION</h1></div>
         </div>
-        <div class="cards p-10 flex gap-5 justify-between items-center">
+        <div class="cards p-10 flex flex-wrap gap-10 justify-between items-center">
           <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
            
             <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -88,7 +89,12 @@
            
               <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
             </div>
-            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div> 
+            <div class="cardinfo flex justify-between items-center text-white mt-3">
+              <h1>A beige overshirt</h1>
+              <h1>30$</h1>
+            </div>
+         </div>
           <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
            
             <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -96,7 +102,12 @@
              
               <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
             </div>
-            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      
+            <div class="cardinfo flex justify-between items-center text-white mt-3">
+              <h1>A beige overshirt</h1>
+              <h1>30$</h1>
+            </div>
+          </div>
           <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
             
             <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -104,7 +115,12 @@
               
               <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
             </div>
-            <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+            <div class="line1 w-full h-[2px] mt-5 bg-white"></div> 
+            <div class="cardinfo flex justify-between items-center text-white mt-3">
+              <h1>A beige overshirt</h1>
+              <h1>30$</h1>
+            </div>
+          </div>
           <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
             
             <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -113,6 +129,10 @@
               <img class=" w-full h-full object-cover" src="https://i.pinimg.com/736x/d8/43/d1/d843d1e6a5d00a78b565d4dbff8cda84.jpg" alt="">
             </div>
             <div class="line1 w-full h-[2px] mt-5 bg-white"></div>
+            <div class="cardinfo flex justify-between items-center text-white mt-3">
+              <h1>A beige overshirt</h1>
+              <h1>30$</h1>
+            </div>
           </div>
         </div>
         </div>
@@ -120,7 +140,7 @@
           <div  class="page-heading w-full flex flex-shrink-0 justify-center items-center">
             <div data-page=".womens" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">WOMEN'S FASHION</h1></div>
           </div>
-      <div class="cards p-10 flex gap-5 justify-between items-center">
+      <div class="cards p-10 flex flex-wrap gap-5 justify-between items-center">
         <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
           
           <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -128,7 +148,12 @@
             
             <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
           </div>
-          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      
+          <div class="cardinfo flex justify-between items-center text-white mt-3">
+            <h1>A rust-colored hijab</h1>
+            <h1>30$</h1>
+          </div>
+        </div>
         <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
           
           <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -136,7 +161,12 @@
            
             <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
           </div>
-          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      
+          <div class="cardinfo flex justify-between items-center text-white mt-3">
+            <h1>A rust-colored hijab</h1>
+            <h1>30$</h1>
+          </div>
+        </div>
         <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
           
           <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -144,7 +174,12 @@
           
             <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
           </div>
-          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>      </div>
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>    
+          <div class="cardinfo flex justify-between items-center text-white mt-3">
+            <h1>A rust-colored hijab</h1>
+            <h1>30$</h1>
+          </div>
+        </div>
         <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
           
           <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
@@ -152,7 +187,11 @@
            
             <img class=" w-full h-full object-cover" src="https://i.pinimg.com/474x/18/6c/2b/186c2b83222a57ed66efeb945a41e6d3.jpg" alt="">
           </div>
-          <div class="line1 w-full h-[2px] mt-5 bg-white"></div>   
+          <div class="line1 w-full h-[2px] mt-5 bg-white"></div> 
+          <div class="cardinfo flex justify-between items-center text-white mt-3">
+            <h1>A rust-colored hijab</h1>
+            <h1>30$</h1>
+          </div>  
        </div>
       </div>
       
@@ -172,7 +211,7 @@
         <h1 class="text-white text-3xl para-effect">Welcome to Mogwarts, where fashion meets modern enchantment. Our brand redefines style with a blend of timeless elegance and contemporary trends. Each piece is thoughtfully designed to celebrate individuality and inspire confidence. Step into a world where magic and fashion collide, creating unique, captivating wardrobe essentials for trendsetters everywhere.</h1>
       </div>
       <div data-text="see more" class="videodiv w-full h-screen cursoreffect scale-[.9]">
-        <video autoplay muted loop class="w-full h-full object-cover" id="scrollVideo" src="shirt.mp4"></video>
+        <video autoplay muted loop class="w-full h-full object-cover" id="scrollVideo" src="shirt2.mp4"></video>
       </div>
     </div>
     <div class="page4 w-full h-screen">
