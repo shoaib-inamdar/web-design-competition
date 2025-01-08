@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face{
+  font-family: neue;
+  src: url();
+}
 
 .nav{
   background: rgba(0,0,0,1);
@@ -20,6 +24,11 @@
 .circle{
   width: 50%;
   height: 23%;
+}
+.cardleft .info:hover{
+  background: #fff;
+  color: #000;
+  transition: all 1 ease-in-out;
 }
 @keyframes marquee {
     0% {

@@ -13,8 +13,10 @@
   <div class="main w-full bg-black overflow-x-hidden ">
     <div class="cursor w-4 h-4 pointer-events-none fixed z-[6] rounded-full bg-white -translate-x-1/2 -translate-y-1/2 opacity-0 mix-blend-difference text-[.2rem] font-semibold flex justify-center items-center"></div>
     <div class="page1 w-full h-screen relative ">
-      <div class="nav-over p-5 absolute top-0 left-0 z-[2] w-full flex justify-between items-center">
-        <div class="logo text-3xl text-white cursor-pointer cursoreffect">logo</div>
+      <div class="nav-over px-5 absolute top-0 left-0 z-[2] w-full flex justify-between items-center">
+        <div class="logo text-3xl h-32 text-white cursor-pointer cursoreffect">
+          <img class="w-full h-full object-cover" src="logo.png" alt="">
+        </div>
         
         <div class="menu text-3xl text-white cursor-pointer cursoreffect">menu</div>
       </div>
@@ -28,7 +30,7 @@
       <div class="content relative w-full h-full flex justify-center items-center">
         <div class="imgdiv w-[20rem] h-[30rem] bg-white rotate-12">
           <img class="w-full h-full object-cover grayscale-0"
-            src="Group 1.svg"
+            src="chico.svg"
             alt="">
         </div>
         <div class="centertext absolute flex-col cursoreffect">
@@ -56,12 +58,30 @@
           </div>
           <!-- <div class="underline w-full h-[3px] bg-white"></div> -->
         </div>
-        <div class="cardiv relative w-full h-screen flex justify-center items-center flex-shrink-0">
-          <div class="cards w-[40rem] h-[35rem] p-5 flex justify-center items-center gap-5 bg-blue-500 flex-wrap">
-            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
-            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
-            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
-            <div class="card w-52 h-52 bg-red-700 rounded-xl "></div>
+        <div class="cardiv text-white relative w-full h-screen flex justify-center items-center flex-shrink-0">
+          <div class="cards w-full h-full relative p-5 flex justify-center items-center gap-5 ">
+            <!-- <div class="gallery overflow-hidden text-white"><h1 class="text-7xl font-bold">GALLERY</h1></div> -->
+            <div class="cardleft w-full lg:w-1/2 h-full p-10 flex-col flex justify-between absolute lg:relative">
+              <div class="info lg:p-10 flex justify-between items-center">
+                <h1 class="text-3xl">01</h1>
+              <h1 class="text-3xl">Men's clothing</h1>
+              </div>
+              <div class="info lg:p-10 flex justify-between items-center">
+                <h1 class="text-3xl">02</h1>
+              <h1 class="text-3xl">Women's clothing</h1>
+              </div>
+              <div class="info lg:p-10 flex justify-between items-center">
+                <h1 class="text-3xl">03</h1>
+              <h1 class="text-3xl">Footwear</h1>
+              </div>
+              <div class="info lg:p-10 flex justify-between items-center">
+                <h1 class="text-3xl">04</h1>
+              <h1 class="text-3xl">Watches</h1>
+              </div>
+            </div>
+            <div class="cardright w-full lg:w-1/2 h-full hidden lg:flex">
+              <img class=" w-full h-full" id="cardright" src="logo.png" alt="">
+            </div>
           </div>
         </div>
         <div class="cardiv relative w-full h-screen flex justify-center items-center flex-shrink-0">
@@ -83,7 +103,7 @@
         </div>
         <div class="cards p-10 flex flex-wrap gap-10 justify-between items-center">
           <div data-text="Buy now" class="card cursoreffect lg:w-72 h-full relative">
-           
+             
             <div class="cardhead absolute -translate-x-[3rem] z-[2] text-2xl ml-4">01</div>
             <div class="cardimg lg:w-72 h-full relative">
            
@@ -202,6 +222,7 @@
         <h1 class="inline-block uppercase text-7xl ml-[16px] font-normal text-transparent stroke"><span class="font-normal italic ">Elevate</span> - Fearless - Authentic -</h1>
       </div>
     </div>
+  </div>
     <div class="page3 w-full h-fit ">
       <div  class="page-heading w-full flex flex-shrink-0 justify-center items-center">
         <div data-page=".page3" class="text-content flex-col overflow-hidden"><h1 class="text-7xl font-semibold text-white">ABOUT US</h1></div>
@@ -215,10 +236,11 @@
       </div>
     </div>
     <div class="page4 w-full h-screen">
-      
+      <div class="contact w-full h-screen ">
+        <img class="w-full h-full object-cover" src="logo.png" alt="">
+      </div>
     </div>
   </div>
-  
   <script type="module" src="script.js"></script>
 </body>
 

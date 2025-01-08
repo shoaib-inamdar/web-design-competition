@@ -118,6 +118,19 @@ function animateTextContentByAttribute(attributeName) {
     });
 }
 
+// gsap.from(`.cardiv .gallery h1`, {
+//     y: 160,
+//     // stagger: 0.2,
+//     duration: 1,
+//     scrollTrigger: {
+//         trigger: ".cardiv",
+//         scroller: 'body',
+//         start: '62% top',
+//         end: '80% top',
+//         scrub: 2,
+//         markers: true // Set to false in production
+//     }
+// });
 // Call the function with the attribute name
 animateTextContentByAttribute('data-page');
 
@@ -189,13 +202,12 @@ tl3.to(".para-effect span",{
     stagger:.03,
     ease:"power4",
 },'para')
-tl3.from(".imgdiv",{
-    height:0,
-    // width:0,
-    stagger:1,
-    duration:2
-    
-},'para')
+// tl3.from(".imgdiv",{
+//     height:0,
+//     // width:0,
+//     stagger:1,
+//     duration:2
+// },'para')
 
 gsap.from(".videodiv",{
     scale:.7,
@@ -231,5 +243,12 @@ document.querySelector(".cross").addEventListener("click",function(){
         right:"-40%",
         duration:1,
         ease:"power4",  
+    })
+})
+
+var images=['mens1.jpg','womens3.jpg','shoes1.jpg','watch1.jpg']
+document.querySelectorAll(".cardleft .info").forEach(function(e,index){
+    e.addEventListener("mouseenter",function(elem){
+        document.querySelector("#cardright").src=images[index]
     })
 })
