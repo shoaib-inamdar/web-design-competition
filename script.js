@@ -246,9 +246,9 @@ document.querySelector(".cross").addEventListener("click",function(){
     })
 })
 
-var images=['mens1.jpg','womens3.jpg','shoes1.jpg','watch1.jpg']
+var images=['./images/mens1.jpg','./images/womens3.jpg','./images/shoes1.jpg','./images/watch1.jpg']
 document.querySelectorAll(".cardleft .info").forEach(function(e,index){
-    e.addEventListener("mouseenter",function(elem){
+    e.addEventListener("mouseenter",function(){
         document.querySelector("#cardright").src=images[index]
     })
 })
